@@ -1,7 +1,9 @@
 const express = require('express');
-
+const connectDB = require('./config/db');
 const app = express();
 
+// connect DB and call connect db
+connectDB();
 app.get('/', (req, res) => {
   return res.json({ msg: 'Welcome to the Contact kepper API...' });
 });
