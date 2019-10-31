@@ -97,7 +97,7 @@ const ContactForm = () => {
         <Button
           variant='contained'
           color='primary'
-          fullWidth='true'
+          fullWidth={true}
           type='submit'>
           {current ? 'Update contact' : 'Add contact'}
         </Button>
