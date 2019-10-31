@@ -9,11 +9,6 @@ connectDB();
 // init Middleware
 app.use(express.json({ extended: false }));
 
-// Index
-//app.get('/', (req, res) => {
-//  return res.json({ msg: 'Welcome to the Contact kepper API...' });
-//});
-
 // Define Routes
 app.use('/api/users', require('./routes/users'));
 app.use('/api/auth', require('./routes/auth'));
