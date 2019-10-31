@@ -13,7 +13,7 @@ const connectDB = async () => {
     });
     console.log('MongoDB is connected...');
   } catch (err) {
-    console.error(err.message);
+    console.error('Kunde inte ansluta: ', err.message);
     process.exit(1);
   }
 };

@@ -4,6 +4,11 @@ const app = express();
 
 // connect DB and call connect db
 connectDB();
+
+// init Middleware
+app.use(express.json({ extended: false }));
+
+// Index
 app.get('/', (req, res) => {
   return res.json({ msg: 'Welcome to the Contact kepper API...' });
 });
